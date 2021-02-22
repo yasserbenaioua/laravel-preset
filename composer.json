@@ -13,6 +13,10 @@
             "Benaioua\\MyPreset\\": "src/"
         }
     },
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/jetstream": "^2.0"
+    },
     "extra": {
         "laravel": {
             "providers": ["Benaioua\\MyPreset\\MyPresetServiceProvider"]
