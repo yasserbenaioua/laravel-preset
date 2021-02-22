@@ -8,7 +8,7 @@ use Illuminate\View\Compilers\BladeCompiler;
 use Benaioua\MyPreset\Http\Livewire\Header;
 use Livewire\Livewire;
 
-class JetstreamServiceProvider extends ServiceProvider
+class MyPresetServiceProvider extends ServiceProvider
 {
   /**
    * Register any application services.
