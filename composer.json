@@ -1,0 +1,24 @@
+{
+    "name": "yasserbenaioua/my-preset",
+    "description": "My Laravel Preset Front-End",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yasser Benaioua",
+            "email": "yasse.bn1997@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Benaioua\\MyPreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Benaioua\\MyPreset\\MyPresetServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+}
