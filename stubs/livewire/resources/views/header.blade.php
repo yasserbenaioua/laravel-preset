@@ -7,27 +7,6 @@
   </button>
   <div class="flex-1 px-4 flex justify-end">
     <div class="ltr:ml-4 rtl:mr-4 flex items-center md:ltr:ml-6 md:rtl:mr-6 space-x-2 rtl:space-x-reverse">
-      <!-- Languages dropdown -->
-      <div class="relative">
-        <x-jet-dropdown :align="LaravelLocalization::getCurrentLocaleDirection() == 'rtl' ? 'left' : 'right'" width="48">
-          <x-slot name="trigger">
-              <button class="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                <span class="sr-only">View Languages</span>
-                <svg class="h-6 w-6" x-description="Heroicon name: outline/bell" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
-                </svg>
-              </button>
-          </x-slot>
-
-          <x-slot name="content">
-            @foreach(LaravelLocalization::getLocalesOrder() as $localeCode => $properties)              
-              <x-jet-dropdown-link rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                {{ $properties['native'] }}
-              </x-jet-dropdown-link>
-            @endforeach
-          </x-slot>
-        </x-jet-dropdown>
-      </div>
       <button class="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
         <span class="sr-only">View notifications</span>
         <svg class="h-6 w-6" x-description="Heroicon name: outline/bell" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -36,7 +15,7 @@
       </button>
       <!-- Profile dropdown -->
       <div class="relative"> 
-        <x-jet-dropdown :align="LaravelLocalization::getCurrentLocaleDirection() == 'rtl' ? 'left' : 'right'" width="48">
+        <x-jet-dropdown align="right" width="48">
           <x-slot name="trigger">
               @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
                   <button class="max-w-xs bg-white flex items-center text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
