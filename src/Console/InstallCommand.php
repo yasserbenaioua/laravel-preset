@@ -34,7 +34,7 @@ class InstallCommand extends Command
     // NPM Packages...
     $this->updateNodePackages(function ($packages) {
       return [
-        'tailwind-dir' => '^4.0.0',
+        'tailwindcss-dir' => '^4.0.0',
       ] + $packages;
     });
   }
