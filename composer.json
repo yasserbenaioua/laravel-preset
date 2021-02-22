@@ -15,9 +15,7 @@
     },
     "extra": {
         "laravel": {
-            "providers": [
-                "Benaioua\\MyPreset\\MyPresetServiceProvider"
-            ]
+            "providers": ["Benaioua\\MyPreset\\MyPresetServiceProvider"]
         }
     },
     "minimum-stability": "stable"
