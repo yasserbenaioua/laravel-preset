@@ -56,6 +56,7 @@ class InstallCommand extends Command
     
     copy(__DIR__ . '/../../resources/views/components/confirms-password.blade.php', base_path('vendor/laravel/jetstream/resources/views/components/confirms-password.blade.php'));
     copy(__DIR__ . '/../../resources/views/components/dialog-modal.blade.php', base_path('vendor/laravel/jetstream/resources/views/components/dialog-modal.blade.php'));
+    copy(__DIR__ . '/../../resources/views/components/nav-link.blade.php', base_path('vendor/laravel/jetstream/resources/views/components/nav-link.blade.php'));
 
     // Layouts...
     (new Filesystem)->copyDirectory(__DIR__ . '/../../stubs/livewire/resources/views/layouts', resource_path('views/layouts'));
