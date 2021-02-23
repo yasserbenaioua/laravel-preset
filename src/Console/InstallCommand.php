@@ -59,6 +59,7 @@ class InstallCommand extends Command
 
     // Layouts...
     (new Filesystem)->copyDirectory(__DIR__ . '/../../stubs/livewire/resources/views/layouts', resource_path('views/layouts'));
+    (new Filesystem)->copyDirectory(__DIR__ . '/../../stubs/livewire/resources/views/components', resource_path('views/components'));
 
     // Single Blade Views...
     copy(__DIR__ . '/../../stubs/livewire/resources/views/header.blade.php', resource_path('views/header.blade.php'));
