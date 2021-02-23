@@ -64,6 +64,7 @@ class InstallCommand extends Command
 
     // Single Blade Views...
     copy(__DIR__ . '/../../stubs/livewire/resources/views/header.blade.php', resource_path('views/header.blade.php'));
+    copy(__DIR__ . '/../../stubs/livewire/resources/views/profile/logout-other-browser-sessions-form.blade.php', resource_path('views/profile/logout-other-browser-sessions-form.blade.php'));
 
     $this->line('');
     $this->info('Preset scaffolding installed successfully.');
